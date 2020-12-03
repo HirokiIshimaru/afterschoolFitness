@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/affter_login.css" type="text/css">
+<title>Document</title>
+</head>
+<body>
+<header>
+    <p id="logoBox">
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
+    </p>
+</header>
+<main>
+    <div class="heading">
+        <h2>ログイン画面</h2>
+    </div>
+    <form action="php/affter_login.php" method="POST">
+        <div class="input">
+            <p class="mail">メールアドレス</p>
+                <input type="email" name="email" class="inputBox">
+            <p class="pw">パスワード</p>
+                <input type="password" name="pw" class="inputBox">
+            <label class="loginPass">
+                <input type="checkbox">次回からログインを省略
+            </label>
+            <input type="submit" name="login" value="ログイン" class="submit">
+        </div>
+    </form> 
+    <a href="#">パスワードを忘れた方</a>
+</main>
+</body>
+</html>

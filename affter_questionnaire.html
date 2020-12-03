@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/affter_questionnaire.css" type="text/css">
+<title>Document</title>
+</head>
+<body>
+    <header>
+        <p class="logoBox">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+        </p>
+    </header>
+    <div class="heading">
+        <h2 class="title">アンケート</h2>
+    </div>
+    <div class="subtitle">
+        <p>放課後フィットネスへのご登録、ありがとうございます。<br>
+        以下の3つのアンケートにお答えください。アンケート結果は<br>
+        パートナーのマッチングに利用します。</p>
+    </div>
+    <div class="purpose">
+        <h2>目的<span></span></h2>
+        <p>フィットネスをどの様な目的で利用するか、下の3つの項目から選択してください。</p>
+        <form action="php/affter_questionnaire.php" method="post">
+        <div id="haba">
+            <label class="frame">
+                <input type="radio" id="purpose01" name="qus1" value="健康" checked>
+                <label for="purpose01">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15.358" viewBox="0 0 18 15.358">
+                        <path id="health" class="cls-1" d="M15.531,45.023l-1.1,2.7-3.893-9.849a.482.482,0,0,0-.911.043L6.276,49.407l-2.7-8.669a.482.482,0,0,0-.922.007L1.382,45.023H0v1.36H2.4L3.134,43.9l2.71,8.693a.482.482,0,0,0,.923-.009l3.448-11.823,3.756,9.5a.482.482,0,0,0,.895,0l1.58-3.882H18v-1.36H15.531Z" transform="translate(0 -37.571)"/>
+                    </svg>健康
+                </label>
+            </label>
+            <label class="frame">
+                <input type="radio" id="purpose02" name="qus1" value="筋トレ">
+                <label for="purpose02">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.375" height="18" viewBox="0 0 16.375 18">
+                    <path id="muscle" class="cls-1" d="M39.437,12.108c-.062-.211-.187-.593-.413-1.278C38.292,8.586,34.279.718,34.279.718A1.24,1.24,0,0,0,33,.009L28.039.617a1.037,1.037,0,0,0-.788.537,14.83,14.83,0,0,0-.818,1.527,1.2,1.2,0,0,0,.39,1.512,7.38,7.38,0,0,0,3.272.732c.74-.327,1.122-1.807,1.122-1.807l1.121-.195a10.678,10.678,0,0,1,.39,3.03,14.969,14.969,0,0,0,.255,3.995c-.307.106-.629-.282-1.3-.909a3.762,3.762,0,0,0-5.835.522,7.817,7.817,0,0,0-2.734-.522V18a4.556,4.556,0,0,0,3.194-1.769,14.6,14.6,0,0,0,4.612-.182,15.393,15.393,0,0,0,4.737-1.581l3.132-1.06A1.032,1.032,0,0,0,39.437,12.108Z" transform="translate(-23.115 0)"/>
+                </svg>筋トレ
+                </label>
+            </label>
+            <label class="frame">
+                <input type="radio" id="purpose03" name="qus1" value="ダイエット">
+                <label for="purpose03">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path id="bw" class="cls-1" d="M16.5,0H1.5A1.5,1.5,0,0,0,0,1.5v15A1.5,1.5,0,0,0,1.5,18h15A1.5,1.5,0,0,0,18,16.5V1.5A1.5,1.5,0,0,0,16.5,0ZM12.81,6.75h-2.3l.4-2.4-.372-.076L10.17,4.2,9.557,6.75H5.19L4.2,3.87a9.317,9.317,0,0,1,9.6,0Z" transform="translate(0 -0.004)"/>
+                </svg>ダイエット                       
+                </label>
+            </label>
+        </div>
+    </div>
+    <div class="join">
+        <h2>参加日<span></span></h2>
+        <p>どれくらいの頻度でフィットネスに通うか、下の3つの項目から選択してください。</p>
+        <div id="haba">
+            <label class="frame">
+                <input type="radio" id="dot01" name="qus2" value="１回〜２回">
+                <label for="dot01">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
+                    <circle id="dot1" class="cls-10" cx="2" cy="2" r="2"/>                        
+                </svg>週１〜２回
+                </label>
+            </label>
+            <label class="frame">
+                <input type="radio" id="dot02" name="qus2" value="３回〜４回">
+                <label for="dot02">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                <g id="dot3" class="jj" transform="translate(-142 -410)">
+                    <circle id="dot3_1" class="cls-31 cc" cx="2" cy="2" r="2" transform="translate(142 410)"/>
+                    <circle id="dot3_2" class="cls-32 cc" cx="2" cy="2" r="2" transform="translate(150 418)"/>
+                    <circle id="dot3_3" class="cls-33 cc" cx="2" cy="2" r="2" transform="translate(146 414)"/>
+                </g>
+                </svg>週３〜４回                      
+                </label>
+            </label>
+            <label class="frame">
+                <input type="radio" id="dot03" name="qus2" value="５回〜">
+                <label for="dot03">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                    <g id="dot5" class="jj" transform="translate(-310 -386)">
+                    <circle id="dot5_5" class="cls-51 cc" cx="2" cy="2" r="2" transform="translate(310 386)"/>
+                    <circle id="dot5_4" class="cls-52 cc" cx="2" cy="2" r="2" transform="translate(318 394)"/>
+                    <circle id="dot5_3" class="cls-53 cc" cx="2" cy="2" r="2" transform="translate(314 390)"/>
+                    <circle id="dot5_2" class="cls-54 cc" cx="2" cy="2" r="2" transform="translate(310 394)"/>
+                    <circle id="dot5_1" class="cls-55 cc" cx="2" cy="2" r="2" transform="translate(318 386)"/>
+                    </g>
+                </svg>週５回以上
+                </label>
+            </label>
+        </div>
+    </div>
+    <div class="personality">
+        <h2>性格<span></span></h2>
+        <p>あなたの普段の性格を、下の2つの項目から選択してください。</p>
+        <div id="haba">
+            <label class="frame">
+                <input type="radio" id="animal" name="qus3" value="活発">
+                <label for="animal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.962" viewBox="0 0 18 12.962">
+                <g id="active" class="jj" transform="translate(-26 -520.797)">
+                    <path id="head" class="cls-100 cc" d="M7.81,146.668c-.667.883.357,1.692-.31,2.574s-1.691.074-2.358.956.357,1.692-.309,2.574-1.691.073-2.357.955.358,1.692-.309,2.574S.306,156.835,0,158.212H2.754L11.18,145.25C9.643,145.881,8.477,145.786,7.81,146.668Z" transform="translate(26 375.547)"/>
+                    <path id="foot" class="cls-101 cc" d="M98.322,83.918l-5.054-4.624-.609-1.633a.343.343,0,0,0-.281-.224.332.332,0,0,0-.317.162L84.526,89.99h7.7l1.294-3.463,3.017.634a1.173,1.173,0,0,0,1.225-.481l.732-1.032A1.329,1.329,0,0,0,98.322,83.918Zm-4.713-.362a.6.6,0,1,1,.568-.6A.585.585,0,0,1,93.609,83.556Z" transform="translate(-54.739 443.566)"/>
+                </g>
+                </svg> 活発                         
+                </label>
+            </label>
+            <label class="frame">
+                <input type="radio" id="animal2" name="qus3" value="恥ずかしがり屋">
+                <label for="animal2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17.935" height="18" viewBox="0 0 17.935 18">
+                    <path id="riss" class="cls-102 cc" d="M13.881,0A4.978,4.978,0,0,0,8.9,4.978c0,.283-.006,1.135-.006,1.135l.1,2.8a.357.357,0,0,1-.593.314S7.38,8.294,6.809,7.786a2.084,2.084,0,0,0-.525-.632.7.7,0,0,0,.027-.081.94.94,0,0,0-.5-1.176,1.045,1.045,0,0,0-1.156.716.96.96,0,0,0-.027.154C2.883,7,2.312,8.515,1.547,9.642c-.009.012-1.05.42-.42,1.26.756,1.008,1.176.756,3.025,1.05a3.544,3.544,0,0,0,1.036.008l.038.271-.475.547a.506.506,0,0,1-.293.168l-1,.265a.436.436,0,1,0,.156.859l1.031-.092a1.555,1.555,0,0,0,.776-.387l.056.392A2.666,2.666,0,0,0,5.287,16.8C3.964,16.992,4.279,18,4.279,18H9.835a4.31,4.31,0,0,0,.252-.631c1.9-.293,4.557-2.434,3.892-6.677a4.985,4.985,0,0,1-1.07-.079l.409-.689c.135.015.271.025.409.029h.014l.14,0c.051,0,.1,0,.153,0h.039l.121-.006.033,0q.158-.011.313-.031h0A4.978,4.978,0,0,0,13.881,0Z" transform="translate(-0.924)"/>
+                </svg>恥ずかしがり屋
+                </label>
+            </label>
+        </div>
+    </div>
+    <label class="submit">
+        <input type="submit" name="send" value="アンケートを送信">
+    </label>
+    </form>
+</body>
+</html>

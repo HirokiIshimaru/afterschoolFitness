@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>放課後フィットネス | Home</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h2>ホーム</h2>
+    </header>
+    <div class="contents">
+      
+      <div class="contents__norma">
+        <div class="contents__wrap">
+          <div class="contents__norma__header">
+            <h3>今週のノルマ</h3><p>ジムに４回通う</p>
+          </div>
+          <div class="contents__norma__body">
+            <div class="contents__norma__me">
+              <h4>あなたのノルマ</h4>
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="contents__norma__partner">
+              <h4>パートナーのノルマ</h4>
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contents__partner">
+        <div class="contents__wrap">
+          <div class="contents__partner__body">
+            <div class="contents__partner__body__info">
+              <p><img src="./src/img/partner.png" alt=""></p>
+              <h3>パートナー</h3>
+            </div>
+            <a href="#" class="contents__partner__body__button">
+              <span><img src="./src/img/message.png" alt=""></span>
+              <p>チャット</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contents__data">
+        <div class="contents__wrap">
+          <div class="contents__data__body">
+            <div class="contents__data__body__title">
+              <p><img src="./src/img/data.png" alt=""></p>
+              <h3>今週のデータ</h3>
+            </div>
+            <div class="contents__data__body__data">
+              <div class="contents__data__body__data__graf">
+                <ul class="contents__data__body__data__graf__block">
+                  <li id="js_data01">
+                    <p>0</p>
+                    <div class="data01"></div>
+                  </li>
+                  <li id="js_data02">
+                    <p>0</p>
+                    <div class="data02"></div>
+                  </li>
+                  <li id="js_data03">
+                    <p>0</p>
+                    <div class="data03"></div>
+                  </li>
+                  <li id="js_data04">
+                    <p>0</p>
+                    <div class="data04"></div>
+                  </li>
+                  <li id="js_data05">
+                    <p>0</p>
+                    <div class="data05"></div>
+                  </li>
+                  <li id="js_data06">
+                    <p>0</p>
+                    <div class="data06"></div>
+                  </li>
+                  <li id="js_data07">
+                    <p>0</p>
+                    <div class="data07"></div>
+                  </li>
+                </ul>
+              </div>
+              <ul class="contents__data__body__data__tag">
+                <li class="sunday">日</li>
+                <li>月</li>
+                <li>火</li>
+                <li>水</li>
+                <li>木</li>
+                <li>金</li>
+                <li class="saturday">土</li>
+              </ul>
+            </div>
+            <a href="#" class="contents__data__body__button">
+              <span><img src="./src/img/write.png" alt=""></span>
+              <p>今日の筋質点数を登録する</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contents__point">
+        <div class="contents__wrap">
+          <div class="contents__point__body">
+            <div class="contents__point__body__info">
+              <div class="contents__point__body__info__title">
+                <p><img src="./src//img/pts.png" alt=""></p>
+                <h3>ポイント</h3>
+              </div>
+              <div class="contents__point__body__info__having">
+                <h4>123<span>pts</span></h4>
+              </div>
+            </div>
+            <a href="#" class="contents__point__body__use">
+              ポイントの使い方<i class="fas fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contents__ranking">
+          <div class="contents__wrap">
+            <div class="contents__ranking__tab">
+              <button id="js_tab01" class="active" onclick=tabLog01()>筋質点数</button>
+              <button id="js_tab02" onclick=tabLog02()>月別変化量</button>
+              <button id="js_tab03" onclick=tabLog03()>体脂肪率</button>
+            </div>
+            <div class="contents__ranking__list">
+              <ul id="js_ranking">
+                <li>1位 目覚めのマッスル兄さん</li>
+                <li>2位 マッスル金太くん</li>
+                <li>3位 ダイエットやめてボディビルダーなるさん</li>
+                <li>4位 私はあなたを持ち上げるさん</li>
+                <li>5位 人よりゴリラさん</li>
+              </ul>
+              <a href="#">
+                6位〜のランキングはこちら<i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script>
+
+    const data01 = document.querySelector("#js_data01 > p");
+    const setStyle01 = document.querySelector(".data01");
+    let count01 = 0;
+    let setData01 = 60;
+    setStyle01.style.height = `${setData01}px`;
+    const data01Counter = setInterval(() => {
+      count01++;
+      data01.innerHTML=`${count01}点`;
+      if(count01 >= setData01){
+        clearInterval(data01Counter);
+      }
+    },30);
+    const data02 = document.querySelector("#js_data02 > p");
+    const setStyle02 = document.querySelector(".data02");
+    let count02 = 0;
+    let setData02 = 64;
+    setStyle02.style.height = `${setData02}px`;
+    const data02Counter = setInterval(() => {
+      count02++;
+      data02.innerHTML=`${count02}点`;
+      if(count02 >= setData02){
+        clearInterval(data02Counter);
+      }
+    },30);
+    // const data03 = document.querySelector("#js_data03 > p");
+    // const setStyle03 = document.querySelector(".data03");
+    // let count03 = 0;
+    // let setData03 = 68;
+    // setStyle03.style.height = `${setData03}px`;
+    // const data03Counter = setInterval(() => {
+    //   count03++;
+    //   data03.innerHTML=`${count03}点`;
+    //   if(count03 >= setData03){
+    //     clearInterval(data03Counter);
+    //   }
+    // },30);
+    const data04 = document.querySelector("#js_data04 > p");
+    const setStyle04 = document.querySelector(".data04");
+    let count04 = 0;
+    let setData04 = 67;
+    setStyle04.style.height = `${setData04}px`;
+    const data04Counter = setInterval(() => {
+      count04++;
+      data04.innerHTML=`${count04}点`;
+      if(count04 >= setData04){
+        clearInterval(data04Counter);
+      }
+    },30);
+    // const data05 = document.querySelector("#js_data05 > p");
+    // const setStyle05 = document.querySelector(".data05");
+    // let count05 = 0;
+    // let setData05 = 60;
+    // setStyle05.style.height = `${setData05}px`;
+    // const data05Counter = setInterval(() => {
+    //   count05++;
+    //   data05.innerHTML=`${count05}点`;
+    //   if(count05 >= setData05){
+    //     clearInterval(data05Counter);
+    //   }
+    // },30);
+    // const data06 = document.querySelector("#js_data06 > p");
+    // const setStyle06 = document.querySelector(".data06");
+    // let count06 = 0;
+    // let setData06 = 70;
+    // setStyle06.style.height = `${setData06}px`;
+    // const data06Counter = setInterval(() => {
+    //   count06++;
+    //   data06.innerHTML=`${count06}点`;
+    //   if(count06 >= setData06){
+    //     clearInterval(data06Counter);
+    //   }
+    // },30);
+    // const data07 = document.querySelector("#js_data07 > p");
+    // const setStyle07 = document.querySelector(".data07");
+    // let count07 = 0;
+    // let setData07 = 66;
+    // setStyle07.style.height = `${setData07}px`;
+    // const data07Counter = setInterval(() => {
+    //   count07++;
+    //   data07.innerHTML=`${count07}点`;
+    //   if(count07 >= setData07){
+    //     clearInterval(data07Counter);
+    //   }
+    // },30);
+
+
+    const ranking = document.querySelector("#js_ranking");
+    const ranking01 = [
+      "1位 目覚めのマッスル兄さん",
+      "2位 マッスル金太くん",
+      "3位 ダイエットやめてボディビルダーなるさん",
+      "4位 私はあなたを持ち上げるさん",
+      "5位 人よりゴリラさん",
+    ];
+    const ranking02 = [
+      "1位 アイドルきんにくん",
+      "2位 総筋肉量が全人類上位2％くん",
+      "3位 おいでよ！筋肉のもりもり",
+      "4位 あなたの筋肉引き取ります",
+      "5位 肉体ガリガリくん",
+    ];
+    const ranking03 = [
+      "1位 プロトン兄さん",
+      "2位 三度の飯よりダイエット",
+      "3位 不可能なダイエット",
+      "4位 猿よりも筋肉つけたい",
+      "5位 ハロー！筋肉",
+    ];
+    let ranking_tab = document.querySelector(".contents__ranking__tab");
+    function tabLog01(){
+      ranking_tab.children[0].classList.add("active");
+      ranking_tab.children[1].classList.remove("active");
+      ranking_tab.children[2].classList.remove("active");
+      while (ranking.firstChild) ranking.removeChild(ranking.firstChild);
+      for (const el of ranking01) {
+        var li = document.createElement('li');
+        li.textContent = el;
+        ranking.appendChild(li); 
+      }
+    }
+    function tabLog02(){
+      ranking_tab.children[0].classList.remove("active");
+      ranking_tab.children[1].classList.add("active");
+      ranking_tab.children[2].classList.remove("active");
+      while (ranking.firstChild) ranking.removeChild(ranking.firstChild);
+      for (const el of ranking02) {
+        var li = document.createElement('li');
+        li.textContent = el;
+        ranking.appendChild(li); 
+      }
+    }
+    function tabLog03(){
+      ranking_tab.children[0].classList.remove("active");
+      ranking_tab.children[1].classList.remove("active");
+      ranking_tab.children[2].classList.add("active");
+      while (ranking.firstChild) ranking.removeChild(ranking.firstChild);
+      for (const el of ranking03) {
+        var li = document.createElement('li');
+        li.textContent = el;
+        ranking.appendChild(li); 
+      }
+    }
+  </script>
+</body>
+</html>

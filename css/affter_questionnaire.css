@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 600px;
+}
+
+header p{
+    margin: 14px 0 0 14px;
+}
+
+.heading{
+    width: 100%;
+    height: 40px;
+    background: #E9562A;
+    margin-top: 10px;
+}
+
+.title{
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.subtitle{
+    margin: 20px 0 20px 0;
+}
+
+.subtitle p{
+    font-size: 12px;
+    color: #666666;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.purpose h2{
+    width: 92%;
+    font-size: 14px;
+    color: #EE8464;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.purpose h2 span{
+    margin-left: 5%;
+    width: 86%;
+    display: block;
+    height: 1px;
+    background: #707070;
+}
+
+.purpose p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+label{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#haba{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.join h2{
+    width: 94%;
+    font-size: 14px;
+    color: #EE8464;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.join h2 span{
+    margin-left: 5%;
+    width: 80%;
+    display: block;
+    height: 1px;
+    background: #707070;
+}
+
+.join p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.frame{
+    border: solid 1px #E9562A;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.frame input{
+    display: none;
+}
+#health input[type="radio"]:checked+label {
+    background: #E9562A;
+}
+#health.cls-1{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label #health.cls-1{
+    fill: white ;
+}
+.frame input[type="radio"]:checked+label #bw.cls-1{
+    fill: white ;
+}
+label{
+    color: #E9562A;
+}
+label svg{
+    padding-right: 3.5px;
+}
+#muscle.cls-1{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label #muscle.cls-1{
+    fill: white;
+}
+#muscle input[type="radio"]:checked+label {
+    background: #E9562A;
+}
+label{
+    color: #E9562A;
+}
+#bw.cls-1{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label #bw.cls-2{
+    fill: white;
+}
+#bw input[type="radio"]:checked+label {
+    background: #E9562A;
+}
+#haba{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    color: #E9562A;
+}
+#dot1.cls-10{
+    fill: #E9562A;
+}
+.frame input{
+    display: none;
+}
+#dot1 input[type="radio"]:checked+label {
+    background: #E9562A;
+}
+#dot1.cls-10{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label #dot1.cls-10{
+    fill: white ;
+}
+
+.jj .cc{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label .jj .cc{
+    fill: white ;
+}
+
+#dot5 .cc{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label #dot5 .cc{
+    fill: white ;
+}
+
+.jj .cc{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label .jj .cc{
+    fill: white ;
+}
+
+#dot5 .cc{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label #active .cc{
+    fill: white ;
+}
+
+#riss input[type="radio"]:checked+label {
+    background: #E9562A;
+}
+#riss.cls-102{
+    fill: #E9562A;
+}
+.frame input[type="radio"]:checked+label {
+    background: #E9562A;
+    color: white;
+}
+.frame input[type="radio"]:checked+label #riss.cls-102{
+    fill: white ;
+}
+
+.personality h2{
+    width: 90%;
+    font-size: 14px;
+    color: #EE8464;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.personality h2 span{
+    margin-left: 5%;
+    width: 86%;
+    display: block;
+    height: 1px;
+    background: #707070;
+}
+
+.personality p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.submit{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.submit input{
+    font-size: 14px;
+    color: white;
+    font-weight: 100;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    background: #E9562A;
+    padding: 10px;
+}
